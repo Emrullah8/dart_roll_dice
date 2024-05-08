@@ -14,7 +14,8 @@ class DiceRoller extends StatefulWidget {
 }
 
 class _DiceRollerState extends State<DiceRoller> {
-  var currentDiceRoll = 2;
+//  var currentDiceRoll = 2; //Açılışta zar 2yi gösterecek
+var currentDiceRoll = Random().nextInt(6) + 1; // Açılışta zar random sayı gösterecek
 
   void rollDice() {
     setState(() {
